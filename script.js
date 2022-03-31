@@ -23,7 +23,7 @@ function showTodo(filter) {
             if(filter == todo.status || filter == "all") {
                 liTag += `<li class="task">
                             <label for="${id}">
-                                <input onclick="updateStatus(this)" type="checkbox" id="${id}" ${completed}>
+                                <input onclick="updateStatus(this)" class="input-box" type="checkbox" id="${id}" ${completed}>
                                 <p class="${completed}">${todo.name}</p>
                             </label>
                             <div class="settings">
